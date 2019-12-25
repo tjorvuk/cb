@@ -1,4 +1,4 @@
-def dispatch(func, delta, freq, *args, window=100, dbg=False):
+def dispatch(func, delta, freq, args=[], window=100, dbg=False):
     if(delta % freq <= window):
         if(dbg): print((delta % freq), 'dispatched at delta: ', delta)
         func(*args)
