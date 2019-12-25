@@ -1,6 +1,6 @@
 def dispatch(func, delta, freq, *args, window=100, dbg=False):
     if(delta % freq <= window):
-        if(dbg) print((delta % freq), 'dispatched at delta: ', delta)
+        if(dbg): print((delta % freq), 'dispatched at delta: ', delta)
         func(*args)
 
 def main(load_module, delta, run_command):
