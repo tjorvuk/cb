@@ -1,8 +1,11 @@
-def dispatch(func, delta, freq, *args, window=100):
+def dispatch(func, delta, freq, *args, window=100, dbg=False):
     if(delta % freq <= window):
-        # print((delta % freq), 'dispatched at delta: ', delta)
+        if(dbg) print((delta % freq), 'dispatched at delta: ', delta)
         func(*args)
 
-def main(load_module, delta):
+def main(load_module, delta, run_command):
     # print('elapsed:', delta)
+
     dispatch(lambda: load_module('hello').main(), delta, 1)
+
+    dispatch(lambda: run_command('update'), delta, 10 * 1000, dbg=True)
