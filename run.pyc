@@ -1,0 +1,5 @@
+B
+
+    ö…^ù  ã               @   s   g d dfdd„Z dd„ ZdS )éd   Fc             C   s,   || |kr(|r t || d|ƒ | |Ž  d S )Nzdispatched at delta: )Úprint)ÚfuncÚdeltaZfreqÚargsZwindowZdbg© r   ú./modules/run.pyÚdispatch   s     r   c                s   t ‡ fdd„|dƒ d S )Nc                  s   ˆ dƒ  ¡ S )NZreport)Úmainr   )Úload_moduler   r   Ú<lambda>   ó    zmain.<locals>.<lambda>ià“ )r   )r
+   r   Úrun_commandr   )r
+   r   r	      s    r	   N)r   r	   r   r   r   r   Ú<module>   s   
